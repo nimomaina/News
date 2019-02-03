@@ -11,6 +11,7 @@ class News:
         self.category = category
         self.id = id
 
+
 class Articles:
     '''
     articles class to define article objects

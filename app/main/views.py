@@ -1,5 +1,5 @@
 from flask import render_template, request, redirect, url_for
-from app import main
+from . import main
 from ..request import get_articles, get_news
 
 
@@ -9,7 +9,7 @@ def index():
     '''
     view root page that returns the index page and its data
     '''
-    title = "Home - The World In Your Pocket"
+    title = "Home || News Sources"
 
     all_news = get_news('sports')
     general_news = get_news('general')
