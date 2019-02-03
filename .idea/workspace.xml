@@ -227,6 +227,11 @@
     <option name="localTasksCounter" value="2" />
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="Unittests_for_app_news_test_NewsTest_test_to_check_instance_variables - 2019.02.04 at 00h 54m 40s.xml">
+      <configuration name="Unittests for app.news_test.NewsTest.test_to_check_instance_variables" configurationId="tests" />
+    </history-entry>
+  </component>
   <component name="ToolWindowManager">
     <frame x="683" y="25" width="683" height="700" extended-state="4" />
     <layout>
