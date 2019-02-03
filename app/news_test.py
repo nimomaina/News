@@ -11,8 +11,8 @@ class NewsTest(unittest.TestCase):
             '''
             Set up method that will run before every Test
             '''
-            self.new_source = News('abc', 'nimo', 'https://abc.com/', 'abc news is the best source', 'usa',
-                                        'general', 'abc-news')
+            self.new_source = News('Al Jazeera English', 'http://www.aljazeera.com', 'News, analysis from the Middle East and worldwide', 'usa',
+                                        'general', 'al-jazeera-english')
 
         def test_instance(self):
             '''
@@ -22,13 +22,12 @@ class NewsTest(unittest.TestCase):
         def test_to_check_instance_variables(self):
             '''
             '''
-            self.assertEquals(self.new_source.name, 'abc')
-            self.assertEquals(self.new_source.author, 'nimo')
-            self.assertEquals(self.new_source.url, 'https://abc.com/')
-            self.assertEquals(self.new_source.description, 'abc news is the best source')
+            self.assertEquals(self.new_source.name, 'Aftenposten')
+            self.assertEquals(self.new_source.url, 'http://www.aljazeera.com')
+            self.assertEquals(self.new_source.description, 'News, analysis from the Middle East and worldwide')
             self.assertEquals(self.new_source.country, 'usa')
             self.assertEquals(self.new_source.category, 'general')
-            self.assertEquals(self.new_source.id, 'abc-news')
+            self.assertEquals(self.new_source.id, 'al-jazeera-english')
 
 
 if __name__ == '__main__':
