@@ -22,7 +22,7 @@ class NewsTest(unittest.TestCase):
         def test_to_check_instance_variables(self):
             '''
             '''
-            self.assertEquals(self.new_source.name, 'Aftenposten')
+            self.assertEquals(self.new_source.name, 'Al Jazeera English')
             self.assertEquals(self.new_source.url, 'http://www.aljazeera.com')
             self.assertEquals(self.new_source.description, 'News, analysis from the Middle East and worldwide')
             self.assertEquals(self.new_source.country, 'usa')
