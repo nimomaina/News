@@ -1,5 +1,5 @@
 # News Highlights
-A web application that gives various news source and allow users to read articles
+A web application that gives various news source and allow users to read articles:
 https://nimo-news.herokuapp.com/
 ## By Wairimu Maina
 A student at Moringa School and an aspiring software developer.
