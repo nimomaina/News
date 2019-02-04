@@ -44,7 +44,7 @@
   <!--&lt;!&ndash; end of row &ndash;&gt;-->
 
   <div class="row">
-    <div class="row">
+    <div class="row header">
       <div class="col-md-2">
         <h2>General</h2>
 
@@ -59,7 +59,7 @@
                 <div class="details">
                   <h3>{{all_news.name}}</h3>
                   <p>{{all_news.description | truncate(60)}}</p>
-                  <p><a href="/articles/{{ all_news.id}}">Read {{all_news.name}} Articles</a></p>
+                  <p><a href="/articles/{{ all_news.id}}">View {{all_news.name}} Articles</a></p>
                 </div>
               </div>
             </div>
@@ -71,12 +71,40 @@
 
     </div>
     <!-- end of general row -->
+    <hr>
 
-
-
-    <div class="row">
+       <div class="row header">
       <div class="col-md-2">
-        <h2>Business News</h2>
+        <h2>Tech</h2>
+      </div>
+      <div class="col-md-10">
+        <div class="grid_container">
+
+          <div class="row">
+            {% for all_news in technology %}
+            <div class="col-md-3">
+              <div class="thumbnail">
+                <div class="details">
+                  <h3>{{all_news.name}}</h3>
+                  <p>{{all_news.description | truncate(60)}}</p>
+                  <p><a href="/articles/{{ all_news.id}}">View {{all_news.name}} Articles</a></p>
+                </div>
+              </div>
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+    <!-- end of technology -->
+    <hr>
+
+
+    <div class="row header">
+      <div class="col-md-2">
+        <h2>Business</h2>
       </div>
       <div class="col-md-10">
         <div class="grid_container">
@@ -84,12 +112,12 @@
           <div class="row">
 
             {% for all_news in business %}
-            <div class="col-md-2">
+            <div class="col-md-3">
               <div class="thumbnail">
                 <div class="details">
-                  <h4>{{all_news.name}}</h4>
-                  <p>{{all_news.description | truncate(100)}}</p>
-                  <p><a href="/articles/{{ all_news.id}}">Read {{all_news.name}} Articles</a></p>
+                  <h3>{{all_news.name}}</h3>
+                  <p>{{all_news.description | truncate(60)}}</p>
+                  <p><a href="/articles/{{ all_news.id}}">View {{all_news.name}} Articles</a></p>
 
                 </div>
 
@@ -102,23 +130,49 @@
 
     </div>
     <!-- end of business news row -->
+<hr>
 
-
-
-    <div class="row">
+     <div class="row header">
       <div class="col-md-2">
-        <h2>Sports News</h2>
+        <h2>Fun</h2>
+      </div>
+      <div class="col-md-10">
+        <div class="grid_container">
+          <div class="row">
+            {% for all_news in entertainment %}
+            <div class="col-md-3">
+              <div class="thumbnail">
+                <div class="details">
+                  <h3>{{all_news.name}}</h3>
+                  <p>{{all_news.description | truncate(60)}}</p>
+                  <p><a href="/articles/{{ all_news.id}}">View {{all_news.name}} Articles</a></p>
+                </div>
+              </div>
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!-- end of fun -->
+    <hr>
+
+
+    <div class="row header">
+      <div class="col-md-2">
+        <h2>Sports</h2>
       </div>
       <div class="col-md-10">
         <div class="grid_container">
           <div class="row">
             {% for all_news in sports %}
-            <div class="col-md-2">
+            <div class="col-md-3">
               <div class="thumbnail">
                 <div class="details">
-                  <h4>{{all_news.name}}</h4>
-                  <p>{{all_news.description | truncate(100)}}</p>
-                  <p><a href="/articles/{{ all_news.id}}">Read {{all_news.name}} Articles</a></p>
+                  <h3>{{all_news.name}}</h3>
+                  <p>{{all_news.description | truncate(60)}}</p>
+                  <p><a href="/articles/{{ all_news.id}}">View {{all_news.name}} Articles</a></p>
                 </div>
               </div>
             </div>
@@ -133,32 +187,6 @@
 
 
 
-    <div class="row">
-      <div class="col-md-2">
-        <h2>Technology News</h2>
-      </div>
-      <div class="col-md-10">
-        <div class="grid_container">
-
-          <div class="row">
-            {% for all_news in technology %}
-            <div class="col-md-2">
-              <div class="thumbnail">
-                <div class="details">
-                  <h4>{{all_news.name}}</h4>
-                  <p>{{all_news.description | truncate(100)}}</p>
-                  <p><a href="/articles/{{ all_news.id}}">Read {{all_news.name}} Articles</a></p>
-                </div>
-              </div>
-            </div>
-            {% endfor %}
-          </div>
-        </div>
-
-      </div>
-
-    </div>
-    <!-- end of technology -->
 
 
     <!--<div class="col-md-3">-->
